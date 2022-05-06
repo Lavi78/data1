@@ -1,0 +1,20 @@
+﻿@model IEnumerable<data1.Employee>
+    <table class="table table-bordered" >
+        <tr>
+            <th>id</th>
+            <th>Ename</th>
+            <th>Email</th>
+            <th>Gender</th>
+            <th>Address</th>
+        </tr>
+        @foreach(var rt in Model)
+            {
+    <tr>
+        <td>@rt.id</td>
+        <td>@rt.EName</td>
+        <td>@rt.Email</td>
+        <td>@rt.Gender</td>
+        <td>@rt.Address</td>
+    </tr>
+            }
+    </table>
